@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+:root{
+    --clr-purple: hsl(259, 100%, 65%);
+    --clr-ligth-red: hsl(0, 100%, 67%);
+    --clr-off-white: hsl(0, 0%, 94%);
+    --clr-ligth-grey: hsl(0, 0%, 86%);
+    --clr-smokey-grey: hsl(0, 1%, 44%);
+    --clr-off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    background: var(--clr-off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    background: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px 20px 150px 20px;
+}
+
+.input-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.input--label{
+    color: var(--clr-smokey-grey);
+    font-size: .6em;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.input--error{
+    color: var(--clr-ligth-red);
+    font-size: .6em;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.text--error{
+    position: absolute;
+    top: 195px;
+    color: var(--clr-ligth-red);
+    font-size: .6em;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.text--empty-error{
+    position: absolute;
+    top: 195px;
+    color: var(--clr-ligth-red);
+    font-size: .6em;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 3px;
+    margin-top: 12px;
+}
+
+.date-input{
+    width: 100px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid var(--clr-ligth-grey);
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+.date-input:hover{
+    cursor: pointer;
+}
+
+.date-input:focus-visible{
+    border: 1px solid var(--clr-purple);
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.date-error-input{
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid hsla(0, 100%, 67%, 0.568);
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+.date-error-input:hover{
+    cursor: pointer;
+}
+
+.date-error-input:focus-visible{
+    border: 1px solid var(--clr-purple);
+    outline: none;
+}
+
+button{
+    position: relative;
+    left: 420px;
+    bottom: 35px;
+    width: 50px;
+    height: 50px;
+    background: var(--clr-purple);
+    border: none;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+
+button:hover{
+    background: var(--clr-off-black);
+    cursor: pointer;
+}
+
+.icon{
+    position: relative;
+    right: 7px;
+    bottom: 7px;
+    width: 250%;
+}
+
+
+.container div{
+    margin-left: 20px;
+}
+
+@media (max-width:500px){
+    .container{
+        width: 400px;
+        height: 520px;
+        margin-bottom: 200px;
+    }
+
+    .input-container{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .input--label{
+        font-size: .8em;
+    }
+
+    .date-input{
+        height: 60px;
+    }
+
+    .date-error-input{
+        height: 60px;
+    }
+
+    .container div{
+    margin-left: 15px;
+    }
+
+    .text--error{
+        top: 225px;
+    }
+
+    .text--empty-error{
+        top: 225px;
+    }
+
+    button{
+        left: 165px;
+        bottom: 45px;
+        margin-bottom: 40px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon{
+        width: 110%;
+        right: 1px;
+        bottom: 1px;
+    }
+
+}
+
+.single-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-container{
+    display: flex;
+}
+
+hr {
+    border-top: 1px solid var(--clr-ligth-grey);
+    opacity: .3;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 80%;
+}
+
+.date{
+    display: flex;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.age-display{
+    margin-bottom: 40px;
+    margin-top: -45px;
+}
+
+.date--number{
+    color: var(--clr-purple);
+    margin-right: 10px;
+}
+
+h1{
+    font-weight: 800;
+    font-style: italic;
+    color: var(--clr-off-black);
+}
